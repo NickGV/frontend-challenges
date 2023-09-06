@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--Very-light-gray);
+}
+
+img,h1{
+    margin-bottom: 2rem;
+}
+
+h1{
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    margin-bottom: 5rem;
+}
+
+button{
+    border-radius: 35px;
+    padding: 10px 25px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container{
+    width:  850px;
+}
+
+.card-container{
+   margin: 2.5rem;
+   height: 400px;
+}
+
+.description{
+    color: var(--Transparent-white);
+    font-family: 'Lexend Deca', sans-serif; 
+}
+
+.sedans-container{
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0 0 10px;
+
+}
+
+.suvs-container{
+    background-color: var(--Dark-cyan);
+}
+
+.luxury-container{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.sedans-button{
+    color: var(--Bright-orange);
+    transition: all .5s ease-in-out;
+}
+
+.suvs-button{
+    color: var(--Dark-cyan);
+    transition: all .5s ease-in-out;
+}
+
+.luxury-button{
+    color: var(--Very-dark-cyan);
+    transition: all .5s ease-in-out;
+}
+
+button:hover{
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+
+@media  screen and (max-width: 700px) {
+
+    .container{
+        width: 80%;
+    }
+
+    .row{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .attribution{
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 360px;
+        height: 1450px;
+    }
+
+    .sedans-container{
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .luxury-container{
+        border-radius: 0 0 10px 10px;
+    }
+
+}

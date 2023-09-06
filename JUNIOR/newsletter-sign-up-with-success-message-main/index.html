@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+
+  <main class="container">
+    <div  class="image-container">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="img-mobile">
+    </div>
+
+    <section class="sign-up-section" id="sign-up">
+      <h1 class="title">Stay updated!</h1>
+      <p class="description">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <p>
+        <img src="./assets/images/icon-list.svg" alt="">
+        Product discovery and building what matters
+      </p>
+      <p>
+        <img src="./assets/images/icon-list.svg" alt="">
+        Measuring to ensure updates are a success
+      </p>
+      <p>
+        <img src="./assets/images/icon-list.svg" alt="">
+        And much more!
+      </p>
+
+      <div class="form-section">
+        <form action="" autocomplete="off" id="form">
+          <p>Email address <span id="error-message"></span></p>
+          <input type="email" placeholder="email@company.com" id="email">
+          <button type="submit" id="submit-button">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </section>
+
+    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="img-desktop">
+  </main>
+
+  
+  <section class="success-section"> 
+      <div class="success">
+        <img src="./assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to <span id="email-address"></span>
+        Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <a href="index.html"><button type="button" id="dismiss-button">Dismiss message</button></a>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/NickGV" target="_blank" rel="noopener">NickGV</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

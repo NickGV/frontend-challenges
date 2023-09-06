@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue-main);
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+hr{
+    border-bottom: 3px solid hsl(215, 32%, 27%);
+}
+
+.card-container{
+    width:340px;
+    border-radius: 20px;
+    background-color: var(--Very-dark-blue-card);
+    box-shadow: 0 20px 15px 10px rgba(14, 37, 72, 0.25);
+}
+
+.nft-container{
+    margin: 20px 10px;
+}
+
+.equilibrium-image{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.images div{
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    background-color:hsl(178, 100%, 50%, 60%) ;
+    width: 320px;
+    height: 320px;
+    top: 19%;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+.icon-view{
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%)
+}
+
+.text-card p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.text-prec{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Cyan);
+}
+
+.date{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.profile-sec{
+    display: flex;
+    align-items: center;
+    margin: 18px 0 10px 0;
+    font-size: 12px;
+}
+
+.avatar-image{
+    max-width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.creation-of{
+    color: white;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.creator-name{
+    color: white;
+    letter-spacing: 1px;
+    margin: 2px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: unset;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0.5;
+    margin-top: 2em;
+}
+
+h1:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.creator-name:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.images div:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+@media (max-width: 400px){
+    .body{
+        height: 100vh;
+    }
+
+    .attribution{
+        top: 100%;
+    }
+}

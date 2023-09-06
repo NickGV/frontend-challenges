@@ -1,0 +1,240 @@
+
+
+:root{
+    --Ver-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+body{
+    background-color: var(--Light-Grayish-Magenta);
+    font-family: 'League Spartan', sans-serif;
+}
+
+.background-img{
+    position: absolute;
+    z-index: -1;
+}
+
+.background-img-mobile{
+    display: none;
+}
+
+.bottom{
+    width: 100%;
+}
+
+body p{
+    font-size: 15px
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content{
+    width: 1200px;
+    padding: 2em;
+}
+
+main{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.description-contain{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    color: var(--Ver-Dark-Magenta);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3em;
+    padding-right: 5em;
+    margin-bottom: 0;
+}
+
+.description{
+    color: var(--Dark-Grayish-Magenta);
+    font-size: 15px;
+    padding-right: 13em;
+    line-height: 1.5em;
+}
+
+.ratings-contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+}
+
+.star-img{
+    width: 15px;
+    height: 15px;
+    margin-left: .8em;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    background-color: hsl(300, 24%, 92%);
+    border-radius: 10px;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.guru{
+    margin-left: 2em;
+}
+
+.besttech{
+    margin-left: 5em;
+}
+
+.rated{
+    color: var(--Ver-Dark-Magenta);
+    font-weight: bold;
+    margin-left: 1.5em;
+}
+
+
+.reviews-section{
+    display: flex;
+}
+
+.reviews{
+    background-color: var(--Ver-Dark-Magenta);
+    margin-right: 2em;
+    border-radius: 8px;
+    padding: 2em;
+}
+
+.irene{
+    margin-top: 1em;
+}
+
+.anne{
+    margin-top: 2em;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.profile-image{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    color: var(--White);
+    margin-bottom: 5px;
+}
+
+.status{
+    color: var(--Soft-Pink);
+}
+
+.review{
+    color: var(--White);
+    line-height: 1.5em;
+}
+
+@media screen and (max-width: 399px) {
+
+    body {
+        background-image: url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 399px 900px;
+        background-position: bottom;
+    }
+
+    .background-img{
+        display: none;
+    }
+
+    .background-img-mobile{
+        display: flex;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .img-mobile-bottom{
+        bottom: -2px;
+    }
+
+    .container{
+        width: 380px;
+        height: 100%;
+    }
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        padding: 0;
+    }
+
+    main{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .description-contain{
+        text-align: center;
+    }
+
+    .title{
+        text-align: center;
+        padding: 0;
+    }
+
+    .description{
+        padding: 0;
+    }
+
+    .ratings-contain{
+        margin-left: 0;
+    }
+
+    .ratings{
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .star-contain{
+        padding-top: 1em;
+    }
+
+    .guru, .besttech{
+        margin-left: 0;
+    }
+    
+    .reviews-section{
+        flex-direction: column;
+    }
+
+    .reviews{
+        margin: 0;
+        margin-bottom: 1em;
+    }
+}

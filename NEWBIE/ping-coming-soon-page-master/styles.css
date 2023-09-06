@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+    padding: 2em;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo{
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 20px;
+}
+
+.title span{
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.description{
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: hsl(209, 33%, 12%);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.email{
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 20px;
+}
+
+.email:focus{
+    outline: none;
+}
+
+.email.error{
+    border: 1px solid red;
+}
+
+.text-error{
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px hsla(223, 87%, 63%, 0.461);
+    transition: all .5s ;
+}
+
+button:hover{
+    background-color:  hsla(223, 87%, 63%, 0.724);
+    box-shadow: 1px 5px 10px hsla(223, 100%, 88%, 0.689);
+}
+
+.dashboard-img{
+    margin-top: 3em;
+    margin-bottom: 8em;
+    width: 100%;
+}
+
+.icon-container{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 20px;
+}
+
+.fab{
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+    padding: 15px ;
+    font-size: 20px;
+    transition: all .5s ;
+}
+
+.fab:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.copyright{
+    font-size: 12px;
+    color:  hsl(0, 0%, 59%);
+}
+
+
+@media screen and (min-width: 786px){
+    .container{
+        width: 600px;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .form{
+        flex-direction: initial;
+    }
+
+    .email-container{
+        width: 400px;
+    }
+
+    .email{
+        height: 45px;
+    }
+    .text-error{
+        text-align: start;
+        margin-left: 2em;
+    }
+
+    button{
+        width: 200px;
+        height: 45px;
+    }
+
+    .dashboard-img{
+        margin-bottom: 3em;
+    }
+
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

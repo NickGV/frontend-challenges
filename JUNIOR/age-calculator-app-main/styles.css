@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    max-width: 840px;
+    width: 840px;
+    max-height: 635px;
+    background-color: white;
+    border-radius: 20px 20px 180px 20px;
+    padding: 3.5rem;
+    position: relative;
+    z-index: 100;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    color: hsl(0, 1%, 44%);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 158px;
+    height: 78px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #141414;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+form input.error {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.message-error {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(0, 100%, 67%);
+}
+
+form input:focus {
+    outline: 1px solid hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 45px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    isolation: isolated;
+}
+
+.button-container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.results p {
+    line-height: 100px;
+    white-space: nowrap;
+    font-size: 96px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.result {
+    color: hsl(259, 100%, 65%);
+}
+
+.date {
+    color: hsl(0, 0%, 8%);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 1em;
+        border-radius: 22px 22px 95px 22px;
+    }
+
+    form {
+        width: 90%s;
+    }
+
+    .input-content {
+        width: 30%;
+        font-size: 1.3rem;
+    }
+
+    form input {
+        width: 80%;
+        height: 50px;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 0.7rem;
+        letter-spacing: 0.2rem;
+    }
+
+    button {
+        margin: auto;
+        width: 65px;
+        height: 65px;
+    }
+    button img {
+        width: 40px;
+    }
+
+    .results p {
+        font-size: 3em;
+        line-height: 1.2em;
+    }
+}

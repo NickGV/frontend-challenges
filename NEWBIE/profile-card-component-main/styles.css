@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.main-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--dark-cyan) ;
+}
+
+.bg-holder-one {
+    background-image: url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -20%;
+    left: -40%;
+    transform: rotate(0deg);
+    height: 100%;
+    width: 100%;
+}
+
+.bg-holder-two {
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 60%;
+    right: -50%;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 375px;
+    max-width: 375px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.card-contain{
+   background-color: white;
+   border-radius: 0.5rem;
+}
+
+.profile-contend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 4rem;
+}
+
+.top-image{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.profile-image{
+    border-radius: 50%;
+    position: absolute;
+    border: 4px solid white;
+    top: -40%;
+}
+
+.age{
+    color: var(--dark-grayish-blue);
+    padding-left: 0.45rem;
+    font-weight: 400;
+}
+
+.location{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--dark-grayish-blue);
+}
+
+hr{
+    color: inherit;
+    border: 0;
+    border-top: 1px solid black;
+    margin-top: 10px;
+    opacity: 0.25;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    padding: 0 3rem 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.count{
+    font-weight: bold;
+    color: var(--very-dark-desaturated-blue);
+    font-size: 1.3rem;
+}
+
+.count-type{
+    font-weight: 200px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--dark-gray);
+}
+
+.attribution{
+    z-index: 2;
+}
+
+
+@media (min-width: 576px) {
+    .card-container {
+      padding: 0 0.71rem;
+    }
+    .bg-holder-one {
+      top: -45%;
+      left: -10%;
+    }
+    .bg-holder-two {
+      top: 50%;
+      right: -50%;
+    }
+  }
+  

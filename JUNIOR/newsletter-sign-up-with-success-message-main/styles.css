@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+body p{
+    font-size: 16px;
+}
+
+.sign-up-section{
+    padding: 1em 1.5em 1em 1em;
+}
+
+.title{
+    font-size: 2em;
+    margin-bottom: .8em;
+}
+
+
+.sign-up-section p{
+    margin-bottom: 1.2em;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.sign-up-section img{
+    float: left;
+    margin-right: 1em;
+}
+
+
+.form-section{
+    margin-top: 2em;
+}
+
+.form-section p{
+    margin-bottom: .5em;
+    font-size: 12px;
+}
+
+.form-section input{
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+    margin-bottom: 1.5em;
+}
+
+.form-section input::placeholder{
+    color: hsl(231, 7%, 60%);
+}
+.form-section input:focus{
+    outline: 1px solid hsl(235, 18%, 26%);
+}
+
+.form-section button{
+    color: white;
+    background-color:  hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1em;
+    transition: .3s;
+}
+
+.form-section button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 1px 10px 10px hsla(4, 100%, 67%, 0.508);
+}
+
+#error-message{
+    color: hsl(4, 100%, 67%);
+    float: right;
+}
+
+.form-section input.error{
+    background-color: hsla(4, 100%, 67%, 0.206);
+    color: hsl(4, 100%, 67%);
+    border: 1px solid hsl(4, 100%, 67%);
+}
+.form-section input.error:focus{
+    outline: 1px solid hsl(4, 100%,67%);
+
+
+}
+
+.img-desktop{
+    display: none;
+}
+
+.success-section{
+    display: none;
+    padding: 1em;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.success-section img{
+    width: 80px;
+    margin-bottom: 1em;
+}
+
+.success-section h1{
+    font-size: 2em;
+    margin-bottom: .7em;
+}
+.success-section p{
+    margin-bottom: .7em;
+}
+
+.success-section span{
+    font-weight: 700;
+}
+
+.success-section button{
+    color: white;
+    background-color:  hsl(234, 29%, 20%);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 1em;
+    transition: .3s;
+}
+
+.success-section a{
+    color: white;
+    text-decoration: none;
+}
+
+.success-section button:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 1px 10px 10px hsla(4, 100%, 67%, 0.508);
+}
+
+@media screen and (min-width: 768px) {
+
+    body{
+        background-color: hsl(234, 29%, 20%);
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .container{
+        max-width: 80%;
+        width: 900px;
+        height: 600px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 30px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+    }
+
+    .sign-up-section{
+        padding-top: 4em;
+        padding-right: 3em;
+        padding-left: 2em;
+    }
+
+    .sign-up-section h1{
+        font-size: 3em;
+        margin-bottom: .3em;
+    }
+    .sign-up-section p{
+        padding: 0;
+        margin-bottom: 1em;
+        line-height: 1.5em;
+    }
+
+    .success-section{
+        display: none;
+        background-color: white;
+        width: 400px;
+        height: 450px;
+        border-radius: 30px;
+        padding: 2em ;
+        justify-content: space-between;
+    }
+
+    .success-section img{
+        width: 50px;
+    }
+
+    .success-section h1{
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    .success-section p{
+        margin-bottom: 1em;
+    }
+
+
+    .img-desktop {
+        display: initial; 
+    }
+    .img-mobile{
+        display: none;
+    }
+    
+}

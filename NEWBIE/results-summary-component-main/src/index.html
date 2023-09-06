@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body class="font-Hanken Grotesk">
+
+
+<section class="w-[375px] mx-auto bg-white mb-10 shadow-lg shadow-Darkgrayblue-alpha md:flex md:mt-[10%] md:w-[740px] md:h-[512px] md:rounded-3xl">
+  <!-- Parte azul -->
+  <div class="bg-gradient-to-b from-Light-slate-blue  to-Ligh-royal-blue h-[356px] pt-8 px-10 text-center rounded-b-3xl md:h-full md:w-[370px] md:rounded-3xl md:pt-12">
+    <h2 class="mb-6 text-Lightlavender text-[18px] font-bold md:mb-10">Your Result</h2>
+
+    <div class="circle bg-gradient-to-t from-Light-slate-blue  to-Ligh-royal-blue rounded-full h-[140px] w-[140px] mx-auto grid place-content-center mb-6  md:mb-10">
+      <p class="text-6xl text-white font-bold">76</p>
+      <p class="text-Lightlavender font-bold text-[16px]">of 100</p>
+    </div>
+  
+    <h2 class="text-white  text-3xl md:mb-6">Great</h2>
+    <p class="text-Lightlavender md:text-[20px] ">You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+  <!-- Parte Blanca -->
+  <div class="p-8 h-[454px] md:w-[370px] md:py-14">
+    <h2 class="tex-[18px] font-bold mb-6 md:text-2xl">Summary</h2>
+
+    <div class="bg-Lightred-alpha flex place-content-between p-3 rounded-lg mb-4 h-[54px] place-items-center md:px-4">
+      <p class="flex text-Lightred w-24 gap-2">
+        <img src="assets/images/icon-reaction.svg" alt="" class="">
+        <span class="">Reaction</span>
+      </p>
+
+      <p class="">
+        80
+        <span class="text-Darkgrayblue-alpha"> / 100</span>
+      </p>
+    </div>
+
+    <div class="bg-Orangeyyellow-alpha flex place-content-between p-3 rounded-lg mb-4 h-[54px] place-items-center">      
+      <p class="flex text-Orangeyyellow w-24 gap-2">
+        <img src="assets/images/icon-memory.svg" alt="" class="">
+        <span class="">Memory</span>
+      </p>
+
+      <p class="">
+        92
+        <span class="text-Darkgrayblue-alpha">/ 100</span>
+      </p>
+    </div>
+
+    <div class="bg-Greenteal-alpha flex place-content-between p-3 rounded-lg mb-4 h-[54px] place-items-center">      
+      <p class="flex text-Greenteal w-24 gap-2">
+        <img src="assets/images/icon-verbal.svg" alt="" class="">
+        <span class="">Verbal</span>
+      </p>
+
+      <p class="">
+        61
+        <span class="text-Darkgrayblue-alpha">/ 100</span>
+      </p>
+    </div>
+
+    <div class="bg-Cobaltblue-alpha flex place-content-between p-3 rounded-lg mb-4 h-[54px] place-items-center md:mb-10">      
+      <p class="flex text-Cobaltblue w-24 gap-2">
+        <img src="assets/images/icon-visual.svg" alt="" class="">
+        <span class="">Visual</span>
+      </p>
+
+      <p class="">
+        72
+        <span class="text-Darkgrayblue-alpha">/ 100</span>
+      </p>
+    </div>
+
+  <button class="bg-Darkgrayblue rounded-3xl text-white w-full h-14 text-[18px] hover:bg-gradient-to-b from-Light-slate-blue  to-Ligh-royal-blue">Continue</button>
+  </div>
+</section>
+  
+  
+  
+  
+  <div class="text-center mx-auto absolute bottom-0 left-[45%]">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-400">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/NickGV" target="_blank" class="text-blue-400">NickGv</a>.
+  </div>
+</body>
+</html>

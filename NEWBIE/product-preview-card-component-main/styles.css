@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+
+
+
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--Cream);
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    border-radius: 20px;
+    background-color: var(--White);
+}
+
+.images{
+    width: 100%;
+    height: 436px;
+}
+
+.product-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.product-image-mobile{
+    display: none;
+}
+.product-info{
+    margin: 2em;
+}
+
+.product-type{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 2px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}   
+
+.product-describe{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+
+.cost{
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+}
+
+.cost-actual{
+    color: var(--Dark-cyan);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.cost-before{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2em;
+    opacity: .5;
+}
+
+.add-buttom{
+    width: 100%;
+    color: white;
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 10px;
+    padding:  15px 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.add-buttom:hover{
+    background-color: hsl(159, 53%, 16%);
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        text-align: left;
+    }
+
+    .images{
+        height: 100%;
+    }
+
+    .product-image{
+        display: none;
+    }
+
+    .product-image-mobile{
+        display: flex;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .product-type{
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    .product-name{
+        font-size: 35px;
+    }
+
+    .product-describe{
+        font-size: 15px;
+        margin-bottom: 2em;
+    }
+    
+}

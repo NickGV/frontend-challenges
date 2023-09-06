@@ -1,0 +1,198 @@
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 6%, 94%);
+}
+
+body{
+    font-size: 15px;
+}
+
+main{
+    padding-top: 4em;
+}
+
+main .description{
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 2em;
+}
+
+
+.main-contain{
+    text-align: center;
+    width: 550px;
+    margin: auto;
+}
+
+.title{
+    color: var(--Very-Dark-Blue);
+    opacity: .8;
+    font-weight: 300;
+}
+
+.card-title{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.description{
+    color: var(--Grayish-Blue);
+}
+
+.card .description{
+    font-size: 15px;
+}
+
+.row{
+    width: 700px;
+}
+
+.card{
+    margin: 2em;
+    padding: 2em;
+    width: 400px;
+    height: 250px;
+    border: none;
+    box-shadow: 3px 3px 3px 3px  var(--Very-Light-Gray);
+}
+
+.card-supervisor{
+    border-top: 3px solid var(--Cyan);
+}
+
+.card-builder{
+    border-top: 3px solid var(--Red);
+}
+
+.card-karma{
+    border-top: 3px solid var(--Orange);
+}
+
+.card-calculator{
+    border-top: 3px solid var(--Blue);
+}
+
+.img-container{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 100%;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 1499px){
+    .main-contain{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        justify-content: center;
+    }
+
+    .row{
+        width: 100%;
+        align-items: center;
+        place-content: center;
+        justify-content: center;
+    }
+    
+    .card{
+        margin: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 899px){
+    .main-contain{
+        text-align: center;
+        width: 500px;
+        margin: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        justify-content: center;
+    }
+
+    .row{
+        width: 100%;
+        align-items: center;
+        place-content: center;
+        justify-content: center;
+    }
+    
+    .card{
+        margin: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 599px){
+    .main-contain{
+        text-align: center;
+        width: 350px;
+        margin: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row{
+        width: 400px;
+    }
+    
+    .card{
+        margin: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 399px){
+    .main-contain{
+        text-align: center;
+        width: 300px;
+        margin: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row{
+        width: 350px;
+    }
+    
+    .card{
+        margin: 1em;
+    }
+    
+}
+
+
+
