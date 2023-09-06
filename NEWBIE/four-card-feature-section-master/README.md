@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/Four-card-feature-section/
+Visit the page here: https://four-card-feature-section-nickgv.netlify.app

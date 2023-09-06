@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-please visit the page here: https://nickgv.github.io/intro-component-with-signup/
+please visit the page here: https://intro-component-signup-nickgv.netlify.app

@@ -7,4 +7,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/social-proof-section/
+Visit the page here: https://stats-preview-card-nickgv.netlify.app

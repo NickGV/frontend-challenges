@@ -5,4 +5,4 @@
 ## Welcome! 👋
 
 **Have fun building!** 🚀
-Visit the page here: https://nickgv.github.io/product-preview-card/
+Visit the page here: https://product-preview-card-nickgv.netlify.app

@@ -6,4 +6,4 @@
 
 **Have fun building!** 🚀
 
-live preview url: https://nickgv.github.io/nft-preview-card/
+live preview url: https://nft-preview-card-nickgv.netlify.app

@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/Single-price-grid/
+Visit the page here: https://single-price-grid-nickgv.netlify.app

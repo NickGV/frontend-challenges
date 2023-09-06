@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-visit the page here: https://nickgv.github.io/3-column-preview-card/
+visit the page here: 

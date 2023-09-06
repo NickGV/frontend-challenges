@@ -6,4 +6,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here:  https://nickgv.github.io/Interactive-rating-component/
+Visit the page here:  https://interactive-rating-nickgv.netlify.app

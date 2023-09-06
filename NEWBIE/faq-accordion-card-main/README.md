@@ -6,4 +6,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here:  https://nickgv.github.io/faq-accordion-card/
+Visit the page here:  https://faq-accordion-card-nickgv.netlify.app

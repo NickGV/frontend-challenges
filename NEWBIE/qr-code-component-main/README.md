@@ -2,4 +2,4 @@
 
 
 **Have fun building!** 🚀
- https://nickgv.github.io/qr-component/
+ https://qr-code-nickgv.netlify.app

@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-Visit the page here: https://nickgv.github.io/ping-coming-soon/
+Visit the page here: https://ping-comming-soon-nickgv.netlify.app

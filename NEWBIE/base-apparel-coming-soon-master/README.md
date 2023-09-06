@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-Please visit the page here: https://nickgv.github.io/base-apparel-comming-soon/
+Please visit the page here: https://base-apparel-comming-soon-nickgv.netlify.app

@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/Huddle-landing-page-with-a-single-introductory-section/
+Visit the page here: https://huddle-landing-page-nickgv.netlify.app

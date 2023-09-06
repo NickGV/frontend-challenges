@@ -2,4 +2,4 @@
 
 **Have fun building!** 🚀
  
-Visit the page here: https://nickgv.github.io/profile-card/
+Visit the page here: https://profile-card-nickgv.netlify.app

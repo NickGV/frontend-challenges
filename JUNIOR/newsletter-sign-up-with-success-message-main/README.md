@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-Visit the page here: https://nickgv.github.io/Newsletter-sign-up-form-with-success-message/
+Visit the page here: https://newletter-sigup-nickgv.netlify.app

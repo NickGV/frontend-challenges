@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/order-summary-component/
+Visit the page here: https://order-summary-nickgv.netlify.app

@@ -5,4 +5,4 @@
 ## Welcome! 👋
 **Have fun building!** 🚀
 
-Visit the page here:https://nickgv.github.io/article-preview-component/
+Visit the page here: article-preview-nickgv.netlify.app
