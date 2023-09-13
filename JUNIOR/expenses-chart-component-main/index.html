@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <h1 class="header__h1">
+          <span class="header__title"> My balance </span>
+          <span class="header__balance">$921.48</span>
+        </h1>
+        <div class="header__logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+      </header>
+      <section class="section">
+        <h1 class="section__title text-brow">Spending - Last 7 days</h1>
+        <div class="chart-container">
+          <div class="chart-cell">
+            <div
+              class="chart-cell__bg"
+              data-amount="$17.45"
+              style="height: 51px"
+            ></div>
+            <p class="chart-cell__day">mon</p>
+          </div>
+          <div class="chart-cell">
+            <div
+              class="chart-cell__bg"
+              data-amount="$34.91"
+              style="height: 99px"
+            ></div>
+            <p class="chart-cell__day">tue</p>
+          </div>
+          <div class="chart-cell">
+            <div
+              class="chart-cell__bg chart-cell__bg--blue"
+              data-amount="$52.36"
+              style="height: 151px"
+            ></div>
+            <p class="chart-cell__day">wed</p>
+          </div>
+          <div class="chart-cell">
+            <div
+              class="chart-cell__bg"
+              data-amount="$31.07"
+              style="height: 91px"
+            ></div>
+            <p class="chart-cell__day">thu</p>
+          </div>
+          <div class="chart-cell">
+            <div
+              class="chart-cell__bg"
+              data-amount="$23.39"
+              style="height: 68px"
+            ></div>
+            <p class="chart-cell__day">fri</p>
+          </div>
+          <div class="chart-cell">
+            <div
+              class="chart-cell__bg"
+              data-amount="$43.28"
+              style="height: 125px"
+            ></div>
+            <p class="chart-cell__day">sat</p>
+          </div>
+          <div class="chart-cell">
+            <p class="seven">$25.48</p>
+            <div
+              class="chart-cell__bg"
+              data-amount="$25.48"
+              style="height: 74px"
+            ></div>
+            <p class="chart-cell__day">sun</p>
+          </div>
+        </div>
+        <hr class="divider" />
+        <section class="footer">
+          <div class="current-month">
+            <p class="current-month__title">Total this month</p>
+            <p class="current-month__total text-brow">$479.33</p>
+          </div>
+          <div class="previous-month">
+            <p class="previous-month__percentage text-brow">+2.4%</p>
+            <p class="previous-month__title">from last month</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+      >
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/NickGV/frontend-challenges/tree/main/JUNIOR/expenses-chart-component-main"
+        target="_blank"
+        rel="noopener"
+        >NickGV</a
+      >.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
