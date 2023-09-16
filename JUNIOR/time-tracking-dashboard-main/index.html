@@ -1,160 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <style></style>
-    </head>
-    <body>
-        <div class="container">
-            <section class="profile-card">
-                <div class="profile">
-                    <img
-                        src="./images/image-jeremy.png"
-                        alt=""
-                        class="profile__img"
-                    />
-                    <div class="profile-report">
-                        <p>Report for</p>
-                        <span class="profile__name">Jeremy Robson</span>
-                    </div>
-                </div>
-                <div class="items-container">
-                    <ul>
-                        <li data-period="daily" class="buttons">Daily</li>
-                        <li data-period="weekly" class="buttons">Weekly</li>
-                        <li data-period="monthly" class="buttons">Monthly</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="cards">
-                <div class="card card-work">
-                    <div class="card-content">
-                        <h3>
-                            Work
-                            <img src="./images/icon-ellipsis.svg" alt="" />
-                        </h3>
-
-                        <div class="time-container">
-                            <p data-activity="Work" class="current-time">
-                                0hrs
-                            </p>
-                            <p data-activity="Work" class="previus-time">
-                                Previus - 0hrs
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-play">
-                    <div class="card-content">
-                        <h3>
-                            Play <img src="./images/icon-ellipsis.svg" alt="" />
-                        </h3>
-
-                        <div class="time-container">
-                            <p data-activity="Play" class="current-time">
-                                0hrs
-                            </p>
-                            <p data-activity="Play" class="previus-time">
-                                Previus - 0hrs
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-study">
-                    <div class="card-content">
-                        <h3>
-                            Study
-                            <img src="./images/icon-ellipsis.svg" alt="" />
-                        </h3>
-
-                        <div class="time-container">
-                            <p data-activity="Study" class="current-time">
-                                0hrs
-                            </p>
-                            <p data-activity="Study" class="previus-time">
-                                Previus - 0hrs
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-exercise">
-                    <div class="card-content">
-                        <h3>
-                            Exercise
-                            <img src="./images/icon-ellipsis.svg" alt="" />
-                        </h3>
-
-                        <div class="time-container">
-                            <p data-activity="Exercise" class="current-time">
-                                0hrs
-                            </p>
-                            <p data-activity="Exercise" class="previus-time">
-                                Previus - 0hrs
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-social">
-                    <div class="card-content">
-                        <h3>
-                            social
-                            <img src="./images/icon-ellipsis.svg" alt="" />
-                        </h3>
-
-                        <div class="time-container">
-                            <p data-activity="Social" class="current-time">
-                                0hrs
-                            </p>
-                            <p data-activity="Social" class="previus-time">
-                                Previus - 0hrs
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card card-selfCare">
-                    <div class="card-content">
-                        <h3>
-                            Self Care
-                            <img src="./images/icon-ellipsis.svg" alt="" />
-                        </h3>
-
-                        <div class="time-container">
-                            <p data-activity="Self Care" class="current-time">
-                                0hrs
-                            </p>
-                            <p data-activity="Self Care" class="previus-time">
-                                Previus - 0hrs
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="profile-card">
+        <div class="profile">
+          <img src="./images/image-jeremy.png" alt="" class="profile__img" />
+          <div class="profile-report">
+            <p>Report for</p>
+            <span class="profile__name">Jeremy Robson</span>
+          </div>
         </div>
-        <div class="attribution">
-            Challenge by
-            <a
-                rel="noopener"
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by
-            <a rel="noopener" target="_blank" href="https://github.com/NickGV"
-                >NickGV</a
-            >.
+        <div class="items-container">
+          <ul>
+            <li data-period="daily" class="buttons">Daily</li>
+            <li data-period="weekly" class="buttons">Weekly</li>
+            <li data-period="monthly" class="buttons">Monthly</li>
+          </ul>
         </div>
-        <script src="script.js"></script>
-    </body>
+      </section>
+      <section class="cards">
+        <div class="card card-work">
+          <div class="card-content">
+            <h3>
+              Work
+              <img src="./images/icon-ellipsis.svg" alt="" />
+            </h3>
+
+            <div class="time-container">
+              <p data-activity="Work" class="current-time">0hrs</p>
+              <p data-activity="Work" class="previus-time">Previus - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-play">
+          <div class="card-content">
+            <h3>Play <img src="./images/icon-ellipsis.svg" alt="" /></h3>
+
+            <div class="time-container">
+              <p data-activity="Play" class="current-time">0hrs</p>
+              <p data-activity="Play" class="previus-time">Previus - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-study">
+          <div class="card-content">
+            <h3>
+              Study
+              <img src="./images/icon-ellipsis.svg" alt="" />
+            </h3>
+
+            <div class="time-container">
+              <p data-activity="Study" class="current-time">0hrs</p>
+              <p data-activity="Study" class="previus-time">Previus - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-exercise">
+          <div class="card-content">
+            <h3>
+              Exercise
+              <img src="./images/icon-ellipsis.svg" alt="" />
+            </h3>
+
+            <div class="time-container">
+              <p data-activity="Exercise" class="current-time">0hrs</p>
+              <p data-activity="Exercise" class="previus-time">
+                Previus - 0hrs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-social">
+          <div class="card-content">
+            <h3>
+              social
+              <img src="./images/icon-ellipsis.svg" alt="" />
+            </h3>
+
+            <div class="time-container">
+              <p data-activity="Social" class="current-time">0hrs</p>
+              <p data-activity="Social" class="previus-time">Previus - 0hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="card card-selfCare">
+          <div class="card-content">
+            <h3>
+              Self Care
+              <img src="./images/icon-ellipsis.svg" alt="" />
+            </h3>
+
+            <div class="time-container">
+              <p data-activity="Self Care" class="current-time">0hrs</p>
+              <p data-activity="Self Care" class="previus-time">
+                Previus - 0hrs
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a
+        rel="noopener"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a rel="noopener" target="_blank" href="https://github.com/NickGV"
+        >NickGV</a
+      >.
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="" />
+    </header>
+    <main class="container">
+      <section class="tip-section">
+        <div class="bill">
+          <h1 class="tip-section__title">Bill</h1>
+          <div class="input-container">
+            <img
+              src="./images/icon-dollar.svg"
+              alt="dollar symbol"
+              class="input__img"
+            />
+            <input
+              type="number"
+              placeholder="0"
+              class="input"
+              maxlength="6"
+              id="bill__input"
+            />
+          </div>
+        </div>
+
+        <div class="tip">
+          <h1 class="tip-section__title">Select tip %</h1>
+          <div class="tip__buttons">
+            <button class="tip__button" id="tip__btn" data-percentage=".05">
+              5%</button
+            ><button class="tip__button" id="tip__btn" data-percentage=".10">
+              10%</button
+            ><button class="tip__button" id="tip__btn" data-percentage=".15">
+              15%</button
+            ><button class="tip__button" id="tip__btn" data-percentage=".25">
+              25%</button
+            ><button class="tip__button" id="tip__btn" data-percentage=".50">
+              50%
+            </button>
+            <input
+              type="number"
+              placeholder="Custom"
+              maxlength="3"
+              class="tip__custom-input"
+              id="tip__custom-input"
+            />
+          </div>
+        </div>
+        <div class="people">
+          <h1 class="tip-section__title">
+            Number of People
+            <p id="text-error">Can't be 0</p>
+          </h1>
+          <div class="input-container">
+            <img
+              src="./images/icon-person.svg"
+              alt="people symbol"
+              class="input__img"
+            />
+            <input
+              type="number"
+              placeholder="0"
+              maxlength="4"
+              class="input"
+              id="people__input"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="result">
+        <div class="result-content">
+          <div class="result__message">
+            <p class="result__title">Tip Amount</p>
+            <p class="result__subtitle">/ person</p>
+          </div>
+          <h1 class="result__display" id="tip-amount">$0.00</h1>
+        </div>
+        <div class="result-content">
+          <div class="result__message">
+            <p class="result__title">Total</p>
+            <p class="result__subtitle">/ person</p>
+          </div>
+          <h1 class="result__display" id="total-amount">$0.00</h1>
+        </div>
+
+        <button type="button" class="reset-btn" id="reset-btn">RESET</button>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        rel="noopener"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/NickGV/frontend-challenges/tree/main/JUNIOR/tip-calculator-app-main" rel="noopener" target="_blank">Your Name Here</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
