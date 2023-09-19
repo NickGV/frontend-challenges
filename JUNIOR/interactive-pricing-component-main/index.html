@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title-container">
+        <p class="header__title">Simple, traffic-based pricing</p>
+        <p class="header__subtitle">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+
+      <section class="slider-container">
+        <div class="pageviews-for-price">
+          <p class="pageviews-amount" id="pageviews">10K PAGEVIEWS</p>
+          <div class="price-container"><span class="price" id="price"> $16.00</span> <span class="price__span" id="price__span">/ month</span></div>
+        </div>
+        <input
+          type="range"
+          class="slider-price"
+          id="slider-price"
+          name="slider-price"
+          min="0"
+          max="4"
+          step="1"
+          value="0"
+          aria-valuemin="0"
+          aria-valuemax="4"
+          aria-valuenow="0"
+        />
+        <div class="price-container--sm"><span class="price" id="price--sm"> $16.00</span> <span class="price__span" id="price__span--sm">/ month</span></div>
+        <div class="billing">
+          <p class="billing__mounthly">Monthly Biling</p>
+        <label class="switch">
+          <input
+            type="checkbox"
+            name="switch-button"
+            id="switch"
+            class="switch-button__checkbox"
+          />
+          <span class="slider"></span>
+        </label>
+        <p class="billing__yearly">Yearly Billing</p>
+        <div class="billing__discount-container">
+          <p class="billing__discount">25% discount</p>
+          <p class="billing__discount--sm">-25%</p>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="offer-contaiener">
+        <div class="offers">
+          <p class="offer"><img src="./images/icon-check.svg" alt="check'img" class="offer__check">Unlimited websites</p>
+          <p class="offer"><img src="./images/icon-check.svg" alt="check'img" class="offer__check">100% data ownership</p>
+          <p class="offer"><img src="./images/icon-check.svg" alt="check'img" class="offer__check">Email reports</p> 
+        </div>
+
+        <div  class="trial-button-container">
+          <button class="trial-button" type="button">
+            Start my trial
+          </button>
+        </div >
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/NickGV/frontend-challenges/tree/main/JUNIOR/interactive-pricing-component-main" rel="noopener" target="_blank">NickGv</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
