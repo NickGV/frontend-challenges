@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #ecf2f8;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "card1 card1 card2 card5"
+    "card3 card4 card4 card5";
+  gap: 2.4rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.card {
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 30px 40px 40px -47px rgba(0, 0, 0, 0.409);
+  height: 100%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 2.8rem;
+  margin-right: 1.7rem;
+}
+
+.profile-name {
+  font-size: 0.9em;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  &.profile-name--black {
+    color: black;
+  }
+}
+
+.profile-status {
+  color: #ffffff;
+  grid-row: 500;
+  opacity: 0.4;
+  font-size: 0.75em;
+  &.profile-status--black {
+    color: black;
+  }
+}
+
+.card-mid {
+  font-size: 1.4em;
+  color: white;
+  line-height: 1.6875rem;
+  margin-bottom: 1rem;
+  &.card-mid--black {
+    color: black;
+  }
+}
+
+.card-footer {
+  font-size: 0.9em;
+  color: white;
+  line-height: 1.25rem;
+  opacity: 0.4;
+  &.card-footer--black {
+    color: black;
+  }
+}
+
+.card1 {
+  background-color: #7541c8;
+  grid-area: card1;
+}
+.card2 {
+  background-color: #48556a;
+  grid-area: card2;
+}
+.card3 {
+  background-color: #ffffff;
+  grid-area: card3;
+}
+.card4 {
+  background-color: #19212e;
+  grid-area: card4;
+}
+.card5 {
+  background-color: #ffffff;
+  grid-area: card5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    width: 90%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5";
+    gap: 1rem;
+  }
+}
