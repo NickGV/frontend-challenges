@@ -18,7 +18,7 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://testimonials-grid-nickgv.netlify.app)
+- Live Site URL: [Visit](https://testimonials-grid-nickgv.netlify.app)
 
 ### Built with
 
