@@ -8,7 +8,7 @@
 
 body {
   display: grid;
-  place-items: center;
+  place-content: center;
   min-height: 100vh;
   background-color: #ecf2f8;
 }
@@ -115,6 +115,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    place-items: center;
+  }
   .container {
     display: grid;
     width: 90%;
