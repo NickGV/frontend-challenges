@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* RESET */
+:root {
+  --tipo-principal: "Montserrat", sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  display: grid;
+  place-items: center;
+  font-family: var(--tipo-principal);
+  background-color: #f6f6fe;
+}
+li {
+  list-style-type: none;
+}
+/* RESET */
+
+.header__title {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: #6d708d;
+  margin-bottom: 3rem;
+}
+
+.toggle-container {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.switch-container {
+  position: relative;
+  width: 3.5rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.switch-container > input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 2rem;
+  background: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  transition: transform 0.4s, opacity 0.15s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 5px;
+  bottom: 4px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.4s;
+}
+
+.slider.active::before {
+  left: 25px;
+}
+
+.container {
+  margin-top: 2rem;
+  min-height: 35rem;
+  max-width: 62.5rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.card {
+  min-width: 21.875rem;
+  height: 31.7rem;
+  padding: 2.25rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: #fefeff;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--center {
+  height: 35.1rem;
+  padding: 3.9rem 2.25rem 2.25rem 2.25rem;
+  background: linear-gradient(150deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.card-title {
+  font-size: 1.25em;
+  color: #6d708d;
+  line-height: 1.4375rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-title--center {
+  color: #ffffff;
+}
+
+.card-price {
+  font-size: 5.0625em;
+  color: #494c5f;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-price--hidden {
+  display: none;
+}
+
+.card-price--center {
+  color: #ffffff;
+}
+
+.card-price small {
+  font-size: 41px;
+}
+
+.card-list {
+  margin-bottom: 2.5rem;
+  font-size: 1.0625em;
+}
+
+.card-list li {
+  color: #6d708d;
+  padding: 1rem 0;
+  border-top: 1px solid hsl(234 14% 88% / 0.3);
+}
+
+.card-list li:last-child {
+  border-bottom: 1px solid hsl(234 14% 88% / 0.3);
+}
+
+.card-list--center li {
+  color: #ffffff;
+  border-top-color: hsl(234, 14%, 88%);
+}
+.card--center .card-list li:last-child {
+  border-bottom: 1px solid hsl(234, 14%, 88%);
+}
+
+.btn {
+  padding: 0.875rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9375em;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.btn:hover {
+  color: #696fdd;
+  background: white;
+  border: 1px solid #696fdd;
+}
+
+.btn--center {
+  color: #696fdd;
+  background: white;
+}
+.btn--center:hover {
+  color: #ffffff;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 799px) {
+  body {
+    justify-content: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
