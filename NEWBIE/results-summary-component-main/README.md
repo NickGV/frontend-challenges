@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/Results-summary-component/
+Visit the page here: https://results-summary-component-nickgv.netlify.app
