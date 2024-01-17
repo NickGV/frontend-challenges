@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-visit the page here: 
+visit the page here: [Live preview](https://3-column-preview-nickgv.netlify.app)

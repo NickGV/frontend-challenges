@@ -4,4 +4,4 @@
 
 **Have fun building!** 🚀
 
-Visit the page here: https://nickgv.github.io/stats-preview-card/
+Visit the page here: [Live preview](https://stats-preview-card-nickgv.netlify.app)
