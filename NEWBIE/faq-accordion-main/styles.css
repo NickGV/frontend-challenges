@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --font: "Work Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--Light-pink);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 100%;
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  font-family: var(--font);
+  color: var(--Dark-purple);
+  background-color: var(--Light-pink);
+}
+
+.accordion-container {
+  min-width: 20rem;
+  min-height: 18.75rem;
+  background-color: var(--White);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.248);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header-img {
+  margin-right: 1rem;
+}
+
+.header-title {
+  font-size: 3.125em;
+  font-weight: 700;
+}
+
+.faq {
+  position: relative;
+  cursor: pointer;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 0;
+}
+
+.label:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("./assets/images/icon-plus.svg");
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+}
+
+.label-text {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.label-btn {
+  max-width: 30px;
+}
+
+.faq.active .content {
+  max-height: 300px;
+}
+
+.faq.active .label::before {
+  background-image: url("./assets/images/icon-minus.svg");
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.content p {
+  color: var(--Grayish-purple);
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 10px 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 399px) {
+  body {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+  .accordion-container {
+    width: 37.5rem;
+  }
+}
