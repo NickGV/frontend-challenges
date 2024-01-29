@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <button class="menu-toogle" id="menu-toogle"></button>
+      <div class="nav-content" id="nav-content">
+        <ul class="nav-list" id="nav-list">
+          <li class="nav-item" id="dropdown">
+            <span onclick="toggleDropdown('dropdown-menu1', this)"
+              >Features
+              <img src="./images/icon-arrow-down.svg" alt="toogle-btn"
+            /></span>
+            <div class="dropdown-menu" id="dropdown-menu1">
+              <ul>
+                <li>
+                  <img src="./images/icon-todo.svg" alt="" />
+                  <span>Todo List</span>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  <span>Calendar</span>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  <span>Reminders</span>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="" />
+                  <span>Planning</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item" id="dropdown">
+            <span onclick="toggleDropdown('dropdown-menu2', this)"
+              >Company <img src="./images/icon-arrow-down.svg" alt="toogle-btn"
+            /></span>
+            <div class="dropdown-menu" id="dropdown-menu2">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">Carrers</li>
+          <li class="nav-item">About</li>
+        </ul>
+        <div class="buttons-container">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <main class="main">
+        <section class="content">
+          <h1 class="content-title">
+            <span>Make</span>
+            <span>remote work</span>
+          </h1>
+          <p class="content-description">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="learnmore-btn">Learn more</button>
+          <div class="icons-container">
+            <img src="./images/client-databiz.svg" alt="databiz-icon" />
+            <img src="./images/client-audiophile.svg" alt="audiophile-icon" />
+            <img src="./images/client-meet.svg" alt="meet-icon" />
+            <img src="./images/client-maker.svg" alt="maker-icon" />
+          </div>
+        </section>
+        <section class="hero">
+          <img
+            src="./images/image-hero-desktop.png"
+            alt="hero img"
+            class="hero-desktop"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            alt=""
+            class="hero-mobile"
+          />
+        </section>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/NickGV/frontend-challenges/tree/main/JUNIOR/intro-section-with-dropdown-navigation-main" target="_blank">NickGV</a>.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
