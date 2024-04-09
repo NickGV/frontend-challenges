@@ -1,0 +1,140 @@
+.countdown {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: sans-serif;
+}
+
+.timer {
+  display: block;
+  font-size: 4em;
+  font-weight: 900;
+  width: 7.5rem;
+}
+
+.timer-display {
+  position: relative;
+  height: 100%;
+}
+
+.timer-display__top,
+.timer-display__bottom {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  width: 7.5rem;
+  height: 50%;
+  position: relative;
+}
+
+.timer-display__top {
+  line-height: 1.5;
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(234, 17%, 12%);
+}
+
+.timer-display__bottom {
+  line-height: 0;
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(236, 21%, 26%);
+}
+
+.timer-overlay {
+  position: absolute;
+  top: 0;
+  perspective: 400px;
+  height: 100%;
+  width: 7.5rem;
+}
+
+.timer-overlay__top,
+.timer-overlay__bottom {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
+
+.timer-overlay__top {
+  top: 0;
+  line-height: 1.5;
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(234, 17%, 12%);
+  transform-origin: bottom;
+}
+
+.timer-overlay__bottom {
+  bottom: 0;
+  line-height: 0;
+  color: hsl(345, 95%, 68%);
+  background-color: hsl(236, 21%, 26%);
+  border-top: 2px solid black;
+  transform-origin: top;
+}
+
+.timer-overlay.flip .timer-overlay__top {
+  animation: flip-top 0.8s linear;
+}
+
+.timer-overlay.flip .timer-overlay__bottom {
+  animation: flip-bottom 0.8s linear;
+}
+
+.timer-title {
+  color: hsl(237, 18%, 59%);
+  font-weight: 700;
+  font-size: 0.5em;
+  letter-spacing: 0.2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+@keyframes flip-top {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50%,
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  0%,
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .countdown {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .timer {
+    width: 4rem;
+    font-size: 2.5em;
+  }
+
+  .timer-display__top,
+  .timer-display__bottom {
+    width: 4rem;
+  }
+
+  .timer-overlay {
+    width: 4rem;
+  }
+
+  .timer-overlay__top,
+  .timer-overlay__bottom {
+    width: 4rem;
+  }
+}
