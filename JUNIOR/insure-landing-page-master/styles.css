@@ -99,12 +99,6 @@ td {
   border-spacing: 0;
 }
 
-svg {
-  width: 100%;
-  display: block;
-  fill: currentColor;
-}
-
 body {
   min-height: 100vh;
   font-size: 100%;
@@ -291,7 +285,8 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 3rem 2rem;
-    background: url("/images/bg-pattern-how-we-work-mobile.svg") no-repeat top right,
+    background: url("/images/bg-pattern-how-we-work-mobile.svg") no-repeat top
+        right,
       var(--Dark-Violet);
 
     .action__content-title {
@@ -312,7 +307,7 @@ body {
       color: white;
       text-align: center;
       transition: color 0.3s, background-color 0.3s;
-      font-family: 'Karla', sans-serif;
+      font-family: "Karla", sans-serif;
       letter-spacing: 1px;
 
       &:hover {
@@ -323,6 +318,76 @@ body {
   }
 }
 
-.footer{
-  background-color: var(--Very-Light-Gray);
+.footer {
+  background-color: var(--Dark-Grayish-Violet);
+  padding: 20px;
+  text-align: center;
+  padding-top: 5rem;
+  font-family: "Karla", serif;
+
+  background: url("/images/bg-pattern-footer-mobile.svg") no-repeat top center;
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    .footer__content-img {
+      width: 7rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer__content-social-container {
+      display: flex;
+      gap: 15px;
+
+      .footer__content-social svg {
+        color: #837d88;
+        transition: color 0.3s;
+      }
+
+      .footer__content-social:hover svg {
+        color: black;
+      }
+    }
+  }
+
+  .footer-section ul {
+    list-style: none;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer-section ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .footer-section ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-section h3 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
 }
