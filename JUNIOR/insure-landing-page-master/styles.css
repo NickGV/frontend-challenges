@@ -174,6 +174,16 @@ body {
   text-align: center;
   margin-bottom: 10rem;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    position: relative;
+    background-image: url("/images/bg-pattern-intro-right-desktop.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Dark-Violet);
+  }
+
   .hero__content {
     color: white;
     padding: 5rem 1.5rem;
@@ -181,6 +191,15 @@ body {
     background: url("/images/bg-pattern-intro-left-mobile.svg") no-repeat,
       url("/images/bg-pattern-intro-right-mobile.svg") right bottom no-repeat;
     background-color: var(--Dark-Violet);
+
+    @media screen and (min-width: 768px) {
+      max-width: 100%;
+      text-align: left;
+      padding: 5rem;
+      background: url("/images/bg-pattern-intro-left-desktop.svg") no-repeat,
+        bottom left;
+      background-color: var(--Dark-Violet);
+    }
 
     .hero__content-title {
       font-size: 3rem;
@@ -194,6 +213,9 @@ body {
       font-weight: 400;
       margin-bottom: 2rem;
       line-height: 1.7;
+      @media screen and (min-width: 768px) {
+        max-width: 60cap;
+      }
     }
 
     .hero__content-btn {
@@ -210,6 +232,18 @@ body {
         background-color: white;
         color: var(--Dark-Violet);
       }
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+      }
+    }
+  }
+  .hero__img-container {
+    @media screen and (min-width: 768px) {
+      width: 400px;
+      position: relative;
+      bottom: -10rem;
+      right: 5rem;
     }
   }
 }
@@ -220,11 +254,22 @@ body {
   align-items: center;
   margin-bottom: 10rem;
 
+  @media screen and (min-width: 768px) {
+    max-width: 1280px;
+    align-items: start;
+    padding: 1.5rem 8rem;
+  }
+
   .line {
     margin: 0 auto;
     width: 10rem;
     height: 1px;
     background-color: #e096bb;
+
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      margin-left: 1rem;
+    }
   }
 
   .features__title {
@@ -234,6 +279,11 @@ body {
     font-weight: 400;
     text-align: center;
     font-family: "DM Serif Display", serif;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      margin-left: 1rem;
+    }
   }
 
   .features__content {
@@ -243,6 +293,13 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      align-items: start;
+      justify-content: left;
+    }
+
     .features__card {
       display: flex;
       flex-direction: column;
@@ -250,6 +307,13 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
+
+      @media screen and (min-width: 768px) {
+        align-items: start;
+        justify-content: left;
+        text-align: left;
+      }
+
       .features__card-img {
         width: 100px;
       }
@@ -267,6 +331,10 @@ body {
         line-height: 1.7;
         font-family: "Karla", sans-serif;
         color: var(--Dark-Grayish-Violet);
+
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
       }
     }
   }
@@ -289,6 +357,10 @@ body {
         right,
       var(--Dark-Violet);
 
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
     .action__content-title {
       font-size: 3rem;
       font-weight: 400;
@@ -297,6 +369,11 @@ body {
       text-align: center;
       font-family: "DM Serif Display", sans-serif;
       color: white;
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 0;
+      }
     }
 
     .action-btn {
@@ -327,11 +404,21 @@ body {
 
   background: url("/images/bg-pattern-footer-mobile.svg") no-repeat top center;
 
+  @media screen and (min-width: 768px) {
+    background-image: url("/images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
   .footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
 
     .footer__content-img {
       width: 7rem;
@@ -350,6 +437,14 @@ body {
       .footer__content-social:hover svg {
         color: black;
       }
+    }
+  }
+
+  .footer__links {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      text-align: left;
     }
   }
 
