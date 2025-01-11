@@ -108,6 +108,7 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: "Commissioner", serif;
+  background-color: #fafafa;
 }
 
 header {
@@ -167,6 +168,130 @@ header:before {
   height: 100%;
   -webkit-box-shadow: inset 0px 15rem 5rem -5rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px 15rem 5rem -5rem rgba(0, 0, 0, 0.5);
+}
+
+.section {
+  width: 40rem;
+  border: 1px solid rgba(122, 122, 122, 0.3);
+}
+
+.general {
+  position: relative;
+  margin-top: -5rem;
+  padding: 3rem 2rem 2rem 2rem;
+
+  .mastercraft-logo {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .general-description {
+    font-size: 0.9em;
+    color: var(--Dark-gray);
+  }
+
+  .btn-primary {
+    background-color: var(--Moderate-cyan);
+    color: white;
+    font-weight: 700;
+    padding: 0 3rem;
+    border-radius: 5rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--Dark-cyan);
+    }
+  }
+
+  .bookmark {
+    background-color: rgba(122, 122, 122, 0.1);
+    border-radius: 5rem;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 0 1.5rem 0 0;
+    height: 58px;
+    transition: opacity 0.3s;
+
+    :hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.divider {
+  border-right: 1px solid rgba(122, 122, 122, 0.3);
+  height: 4rem;
+}
+
+.progress-bar {
+  background-color: var(--Moderate-cyan);
+  border-radius: 1rem;
+}
+
+.subtitle {
+  font-size: 1em;
+  color: var(--Dark-gray);
+}
+
+.about-description {
+  font-size: 0.9em;
+  color: var(--Dark-gray);
+}
+
+.product {
+  border: 1px solid rgba(122, 122, 122, 0.3);
+  border-radius: 5px;
+
+  .product-description {
+    font-size: 0.9em;
+    color: var(--Dark-gray);
+  }
+
+  .pledge {
+    color: var(--Moderate-cyan);
+    font-size: 0.9em;
+  }
+
+  .btn-primary {
+    background-color: var(--Moderate-cyan);
+    color: white;
+    font-weight: 700;
+    border-radius: 5rem;
+    font-size: 0.9em;
+    height: 3rem;
+    padding: 0 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: var(--Dark-cyan);
+    }
+  }
+}
+
+.product-gray {
+  opacity: 0.4;
+
+  h2 {
+    color: var(--Dark-gray);
+  }
+
+  .product-description {
+    color: var(--Dark-gray);
+  }
+
+  .btn-primary {
+    background-color: var(--Dark-gray);
+  }
 }
 
 .attribution {
