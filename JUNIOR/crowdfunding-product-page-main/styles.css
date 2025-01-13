@@ -280,18 +280,110 @@ header:before {
 
 .product-gray {
   opacity: 0.4;
+}
 
-  h2 {
+.modal-dialog {
+  max-width: 60rem;
+}
+
+.reward {
+  border: 1px solid rgba(122, 122, 122, 0.3);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+
+  .reward-info {
+    padding: 2rem;
+  }
+
+  .reward-description {
+    font-size: 1em;
     color: var(--Dark-gray);
+    font-weight: 500;
+    margin-bottom: 0;
   }
 
-  .product-description {
-    color: var(--Dark-gray);
+  .pledge {
+    color: var(--Moderate-cyan);
+    font-size: 0.9em;
+    font-weight: 500;
   }
 
-  .btn-primary {
-    background-color: var(--Dark-gray);
+  .reward-form {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(122, 122, 122, 0.3);
+    padding: 2rem 2rem 1rem 2rem;
+
+    h3 {
+      font-size: 1em;
+      font-weight: 600;
+      color: var(--Dark-gray);
+      margin-bottom: 1rem;
+    }
+
+    .pledge-container {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 7.8125rem;
+      height: 3rem;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      border: 1px solid rgba(122, 122, 122, 0.3);
+
+      .dollar-sign {
+        color: var(--Dark-gray);
+        margin-right: 1rem;
+      }
+
+      input {
+        width: 100%;
+        font-weight: 700;
+        border: none;
+        text-align: right;
+        color: var(--Dark-gray);
+      }
+
+      input[type="number"] {
+        -webkit-appearance: none;
+        appearance: none;
+        -moz-appearance: textfield;
+      }
+    }
+
+    .btn-primary {
+      background-color: var(--Moderate-cyan);
+      color: white;
+      font-weight: 700;
+      border-radius: 5rem;
+      font-size: 0.9em;
+      height: 3rem;
+      padding: 0 2rem;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: var(--Dark-cyan);
+      }
+    }
   }
+}
+
+.reward-gray {
+  opacity: 0.4;
+}
+
+.input-radio {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: green;
+}
+.input-radio:checked {
+  appearance: none;
+  border-radius: 50%;
+  background-color: #3cb4ac;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.3);
 }
 
 .attribution {
