@@ -1,9 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const rewardBtn = document.querySelectorAll("#reward-btn");
-  rewardBtn.forEach(btn => {
+  const rewardBtns = document.querySelectorAll("#reward-btn");
+  rewardBtns.forEach(btn => {
     btn.addEventListener("click", function() {
-      $('#pledgeModal').modal('hide');
-      $('#completeModal').modal('show');
+      const pledgeInput = btn.closest('.reward-form').querySelector('#pledge-input');
+      const pledgeAmount = parseInt(pledgeInput.value, 10);
+      const pledgeElement = btn.closest('.reward').querySelector('.pledge');
+      const minPledge = pledgeElement ? parseInt(pledgeElement.textContent.match(/\d+/)[0], 10) : 0;
+
+      if (pledgeAmount >= minPledge) {
+        $('#pledgeModal').modal('hide');
+        $('#completeModal').modal('show');
+      } else {
+        alert(`Please enter a pledge of at least $${minPledge}`);
+      }
     });
   });
 });
@@ -16,12 +25,9 @@ rewards.forEach((reward) => {
       reward.classList.remove("active");
     });
     reward.classList.add("active");
-    console.log(reward.querySelector("#reward-btn"));
     const rewardBtn = reward.querySelector("#reward-btn");
     if (rewardBtn) {
-      console.log(rewardBtn);
       rewardBtn.addEventListener("click", (event) => {
-        console.log("click");
         event.stopPropagation();
         closeModal();
         showComplete();
