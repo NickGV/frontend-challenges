@@ -173,6 +173,11 @@ header:before {
 .section {
   width: 40rem;
   border: 1px solid rgba(122, 122, 122, 0.3);
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .general {
@@ -229,6 +234,10 @@ header:before {
 .divider {
   border-right: 1px solid rgba(122, 122, 122, 0.3);
   height: 4rem;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .progress-bar {
@@ -451,4 +460,42 @@ header:before {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+
+  .general {
+    padding: 2rem 1rem;
+  }
+
+  .general .btn-primary {
+    padding: 0 1rem;
+  }
+
+  .general .bookmark {
+    padding: 0 1rem;
+  }
+
+  .section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .product {
+    padding: 1rem;
+  }
+
+  .product .btn-primary {
+    padding: 0 1rem;
+  }
+
+  .complete-modal {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
 }
