@@ -219,7 +219,7 @@
             <button
               type="button"
               class="btn-close"
-              data-bs-dismiss="modal"
+              data-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
@@ -246,7 +246,7 @@
                 </p>
               </div>
               <div
-                class="reward-form  gap -4 align-items-center justify-content-between"
+                class="reward-form gap -4 align-items-center justify-content-between"
               >
                 <h3>Enter your pledge</h3>
                 <div class="d-flex gap-4 align-items-center">
@@ -261,7 +261,9 @@
                     />
                   </div>
 
-                  <button class="btn btn-primary">Continue</button>
+                  <button class="btn btn-primary" id="reward-btn">
+                    Continue
+                  </button>
                 </div>
               </div>
             </div>
@@ -278,7 +280,9 @@
                       value=""
                     />
                     <h2 class="fw-bold">Bamboo stand</h2>
-                    <span class="pledge mb-2" id="pledge">Pledge $25 or more</span>
+                    <span class="pledge mb-2" id="pledge"
+                      >Pledge $25 or more</span
+                    >
                   </div>
                   <p class="stock d-flex align-items-center">
                     <span class="fw-bold fs-4" id="stock"> 101 </span>
@@ -308,7 +312,9 @@
                     />
                   </div>
 
-                  <button class="btn btn-primary" id="continue-btn">Continue</button>
+                  <button class="btn btn-primary" id="reward-btn">
+                    Continue
+                  </button>
                 </div>
               </div>
             </div>
@@ -339,7 +345,7 @@
               </div>
 
               <div
-                class="reward-form  gap -4 align-items-center justify-content-between"
+                class="reward-form gap -4 align-items-center justify-content-between"
               >
                 <h3>Enter your pledge</h3>
                 <div class="d-flex gap-4 align-items-center">
@@ -354,7 +360,9 @@
                     />
                   </div>
 
-                  <button class="btn btn-primary">Continue</button>
+                  <button class="btn btn-primary" id="reward-btn">
+                    Continue
+                  </button>
                 </div>
               </div>
             </div>
@@ -400,7 +408,9 @@
                     />
                   </div>
 
-                  <button class="btn btn-primary">Continue</button>
+                  <button class="btn btn-primary" id="reward-btn">
+                    Continue
+                  </button>
                 </div>
               </div>
             </div>
@@ -409,11 +419,33 @@
       </div>
     </div>
 
-    <div class="complete-modal" id="completeModal">
-      <img src="./images/icon-check.svg" alt="">
-      <h3>Thanks for your support!</h3>
-      <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
-      <button class="btn btn-primary">Got it!</button>
+    <div
+      class="modal fade"
+      id="completeModal"
+      tabindex="-1"
+      aria-labelledby="completeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4 border-0 text-center complete-modal">
+          <div class="modal-body ">
+            <img src="./images/icon-check.svg" alt="" />
+            <h3>Thanks for your support!</h3>
+            <p>
+              Your pledge brings us one step closer to sharing Mastercraft
+              Bamboo Monitor Riser worldwide.
+            </p>
+            <button
+              type="button"
+              class="btn-primary"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              Got it!
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
