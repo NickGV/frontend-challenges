@@ -1,15 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const rewardBtns = document.querySelectorAll("#reward-btn");
-  rewardBtns.forEach(btn => {
-    btn.addEventListener("click", function() {
-      const pledgeInput = btn.closest('.reward-form').querySelector('#pledge-input');
+  const stockElements = document.querySelectorAll(".stock-count");
+  const modalStockElements = document.querySelectorAll(".modal-stock-count");
+
+  rewardBtns.forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+      const pledgeInput = btn
+        .closest(".reward-form")
+        .querySelector("#pledge-input");
       const pledgeAmount = parseInt(pledgeInput.value, 10);
-      const pledgeElement = btn.closest('.reward').querySelector('.pledge');
-      const minPledge = pledgeElement ? parseInt(pledgeElement.textContent.match(/\d+/)[0], 10) : 0;
+      const pledgeElement = btn.closest(".reward").querySelector(".pledge");
+      const minPledge = pledgeElement
+        ? parseInt(pledgeElement.textContent.match(/\d+/)[0], 10)
+        : 0;
 
       if (pledgeAmount >= minPledge) {
-        $('#pledgeModal').modal('hide');
-        $('#completeModal').modal('show');
+        console.log(stockElements)
+        const stockElement = stockElements[index - 1];
+        const modalStockElement = modalStockElements[index -1];
+        let stockCount = parseInt(stockElement.textContent, 10);
+        console.log(stockCount);
+        if (stockCount > 0) {
+          stockCount--;
+          stockElement.textContent = stockCount;
+          modalStockElement.textContent = stockCount;
+        }
+
+        $("#pledgeModal").modal("hide");
+        $("#completeModal").modal("show");
       } else {
         alert(`Please enter a pledge of at least $${minPledge}`);
       }
@@ -42,7 +60,6 @@ function showComplete() {
 }
 
 function closeModal() {
-  console.log("close");
   const modal = document.querySelector("#pledgeModal");
   modal.classList.remove("show");
   modal.style = "display:none";
